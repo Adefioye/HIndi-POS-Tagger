@@ -6,6 +6,10 @@ import sys
 import os
 
 def random_sample_vocab():
+    """
+    This helps to randomly sample a dataset and select 100
+    unique words from the dataset
+    """
     fin = config.data
     vocab = set()
     input_file = codecs.open(fin, mode = 'r', encoding="utf-8")
@@ -23,6 +27,9 @@ def random_sample_vocab():
     return set(unknown_words)
 
 def test_train_split():
+    """
+    This helps to split data into `train` and `test` categories
+    """
     sample = random_sample_vocab()
     write_sample_to_file(sample)
     fin = config.data
@@ -54,6 +61,9 @@ def test_train_split():
     return len(test), len(train)
 
 def write_set_to_file(file_path, input_set):
+    """
+    This helps to write `input_set` to `file_path`
+    """
     directory = os.path.dirname(file_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -62,6 +72,10 @@ def write_set_to_file(file_path, input_set):
             file.write(str(item))
 
 def remove_test_tags():
+    """Removing test tags to generate `test_tagged.txt`.
+    This dataset is useful for computing evaluation metrics like
+    accuracy, precision, recall and F1-score
+    """
     input_file = codecs.open(config.test_tagged, mode = 'r', encoding="utf-8")
     lines = input_file.readlines()
     output_file = codecs.open(config.test, mode = 'w', encoding="utf-8")
@@ -72,6 +86,7 @@ def remove_test_tags():
     output_file.close()
 
 def write_sample_to_file(random_sample_vocab):
+    """This writes randomly sampled vocabulary to a file"""
     output_file = codecs.open(config.unknown_words_out, mode = 'w', encoding="utf-8")
     for s in random_sample_vocab:
         output_file.write(s + '\n')
