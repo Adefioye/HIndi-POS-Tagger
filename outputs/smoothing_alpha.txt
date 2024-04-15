@@ -1,0 +1,13 @@
+Smoothing alpha 0.01 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  21408
+Total Predictions =  161680
+Accuracy is =  86.75903018307768 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3782
+Model accuracy when it comes to tackling unknown words is =  56.17105110673311 %
+Model accuracy when it comes to tackling known words is =  88.48357736963496 %
+ 
