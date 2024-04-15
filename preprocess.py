@@ -1,9 +1,16 @@
 import codecs 
 import random
 import re 
+import config 
+import sys
+import os
+
+if config.synthetic == False:
+    print ('This file should only be run when working with synthetic data')
+    sys.exit()
 
 def random_sample_vocab():
-    fin = "data/data.txt"
+    fin = config.data
     vocab = set()
     input_file = codecs.open(fin, mode = 'r', encoding="utf-8")
     lines = input_file.readlines()
@@ -21,7 +28,7 @@ def random_sample_vocab():
 
 def test_train_split():
     sample = random_sample_vocab()
-    fin = "data/data.txt"
+    fin = config.data
     input_file = codecs.open(fin, mode = 'r', encoding="utf-8")
     test = set()
     train = set()
@@ -38,31 +45,27 @@ def test_train_split():
                 break
         if oline not in test:
             train.add(oline)
-    write_set_to_file('test_data/synthetic_test_tagged.txt', test)
-    write_set_to_file('train_data/synthetic_train.txt', train)
+    write_set_to_file(config.test_tagged, test)
+    write_set_to_file(config.train, train)
 
 def write_set_to_file(file_path, input_set):
+    directory = os.path.dirname(file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
     with codecs.open(file_path, mode = 'w', encoding="utf-8") as file:
         for item in input_set:
             file.write(str(item))
 
 def remove_test_tags():
-    input_file = codecs.open('test_data/synthetic_test_tagged.txt', mode = 'r', encoding="utf-8")
+    input_file = codecs.open(config.test_tagged, mode = 'r', encoding="utf-8")
     lines = input_file.readlines()
-    output_file = codecs.open('test_data/synthetic_test.txt', mode = 'w', encoding="utf-8")
+    output_file = codecs.open(config.test, mode = 'w', encoding="utf-8")
     for line in lines:    
         clean = re.sub(r'/[^ \n]*[\s\n]', ' ', line)
-        output_file.write(clean + '\n')
+        output_file.write(clean[:-1] + '\n')
     input_file.close()
     output_file.close()
 
 
 test_train_split()
 remove_test_tags()
-                
-
-
-    
-
-    
-

@@ -1,13 +1,14 @@
 import sys
 from decimal import *
 import codecs
+import config
 
 tag_set = set()
 word_set = set()
 
 def parse_traindata():
-    fin = "model/hmmmodel.txt"
-    output_file = "outputs/hmmmoutput.txt"
+    fin = config.hmmmodel
+    output_file = config.hmmoutput
     transition_prob = {}
     emission_prob = {}
     tag_list = []
@@ -128,9 +129,10 @@ def viterbi_algorithm(sentence, tag_list, transition_prob, emission_prob,tag_cou
 
 
 tag_list, transition_model, emission_model, tag_count, word_set = parse_traindata()
-fin = sys.argv[1]
+
+fin = config.test
 input_file = codecs.open(fin, mode='r', encoding="utf-8")
-fout = codecs.open("outputs/hmmoutput.txt",mode='w',encoding="utf-8")
+fout = codecs.open(config.hmmoutput,mode='w',encoding="utf-8")
 for sentence in input_file.readlines():
     path = viterbi_algorithm(sentence, tag_list, transition_model, emission_model,tag_count, word_set)
     sentence = sentence.strip("\n")
@@ -143,11 +145,12 @@ for sentence in input_file.readlines():
             fout.write(word[j] + "/" + tag[j] + " ")
 
 
-predicted = codecs.open("outputs/hmmoutput.txt", mode ='r', encoding="utf-8")
-expected = codecs.open("test_data/test_tagged.txt", mode ='r', encoding="utf-8")
+predicted = codecs.open(config.hmmoutput, mode ='r', encoding="utf-8")
+expected = codecs.open(config.test_tagged, mode ='r', encoding="utf-8")
 
 c = 0
 total = 0
+
 for line in predicted.readlines():
     u = line.split(" ")
     total += len(u)

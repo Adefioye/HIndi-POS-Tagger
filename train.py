@@ -1,6 +1,7 @@
 import sys
 from decimal import *
 import codecs
+import config
 
 tag_list = set()
 tag_count = {}
@@ -8,8 +9,8 @@ word_set = set()
 
 
 def parse_traindata():
-    fin = "train_data/train_data.txt"
-    output_file = "model/hmmmodel.txt"
+    fin = config.train
+    output_file = config.hmmmodel
     wordtag_list = []
 
     try:
@@ -125,7 +126,7 @@ train_data = parse_traindata()
 transition_model = transition_smoothing(train_data)
 emission_model = emission_probability(train_data)
 
-fout = codecs.open("model/hmmmodel.txt", mode ='w', encoding="utf-8")
+fout = codecs.open(config.hmmmodel, mode ='w', encoding="utf-8")
 for key, value in transition_model.items():
     fout.write('%s:%s\n' % (key, value))
 
