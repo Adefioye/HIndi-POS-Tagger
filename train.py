@@ -9,7 +9,7 @@ word_set = set()
 
 try:
     alpha = sys.argv[1]
-    config.smoothing_alpha = 1
+    config.smoothing_alpha = int(alpha)
 except:
     'No emission smoothing alpha provided as part of arguments, using config default'
 
