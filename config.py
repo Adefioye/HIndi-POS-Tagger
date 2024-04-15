@@ -21,3 +21,5 @@ data_count = 16630
 
 emission_smoothing = True
 smoothing_alpha = 0.01  
+
+experiment_out = 'outputs/smoothing_alpha.txt'

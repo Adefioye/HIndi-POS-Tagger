@@ -7,12 +7,6 @@ tag_list = set()
 tag_count = {}
 word_set = set()
 
-try:
-    alpha = sys.argv[1]
-    config.smoothing_alpha = int(alpha)
-except:
-    'No emission smoothing alpha provided as part of arguments, using config default'
-
 def parse_traindata():
     fin = config.train
     output_file = config.hmmmodel
@@ -123,32 +117,33 @@ def emission_count(train_data):
     return count_word
 
 
-def emission_probability(train_data):
+def emission_probability(train_data, smoothing_alpha):
     global tag_count
     word_count = emission_count(train_data)
     emission_prob_dict = {}
     # calculate probability of a word to be a certain Tag out of all the possible tags that it can be #
+    print(smoothing_alpha, " is being used ")
     if config.emission_smoothing:
         V = len(word_set)
         for key in word_count:
-            emission_prob_dict[key] = Decimal(word_count[key] + config.smoothing_alpha)/Decimal(tag_count[key.split("/")[-1]] + (config.smoothing_alpha * (V + 1)))
+            emission_prob_dict[key] = Decimal(word_count[key] + smoothing_alpha)/Decimal(tag_count[key.split("/")[-1]] + (smoothing_alpha * (V + 1)))
     else:
         for key in word_count:
             emission_prob_dict[key] = Decimal(word_count[key])/tag_count[key.split("/")[-1]]
     return emission_prob_dict
 
 
+def main(smoothing_alpha=config.smoothing_alpha):
+    train_data = parse_traindata()
+    transition_model = transition_smoothing(train_data)
+    emission_model = emission_probability(train_data, smoothing_alpha)
 
-train_data = parse_traindata()
-transition_model = transition_smoothing(train_data)
-emission_model = emission_probability(train_data)
+    fout = codecs.open(config.hmmmodel, mode ='w', encoding="utf-8")
+    for key, value in transition_model.items():
+        fout.write('%s:%s\n' % (key, value))
 
-fout = codecs.open(config.hmmmodel, mode ='w', encoding="utf-8")
-for key, value in transition_model.items():
-    fout.write('%s:%s\n' % (key, value))
-
-fout.write(u'Emission Model\n')
-for key, value in emission_model.items():
-    fout.write('%s:%s\n' % (key, value))
+    fout.write(u'Emission Model\n') 
+    for key, value in emission_model.items():
+        fout.write('%s:%s\n' % (key, value))
 
 

@@ -188,6 +188,3 @@ if config.synthetic:
     print("Total instances where unknown words were incorrectly predicted", unknown_words_incorrectly_predicted)
     print("Model accuracy when it comes to tackling unknown words is = ",100 - (unknown_words_incorrectly_predicted/unknown_words_instances * 100),"%")
     print("Model accuracy when it comes to tackling known words is = ",100 - ((c-unknown_words_incorrectly_predicted)/(total-unknown_words_instances) * 100),"%")
-
-def main():
-    return 100 - (c/total * 100)
