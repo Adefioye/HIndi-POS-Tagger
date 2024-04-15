@@ -5,6 +5,11 @@ import config
 
 tag_set = set()
 word_set = set()
+unknown_words_set = set()
+if config.synthetic:
+    unknown_words = codecs.open(config.unknown_words_out, mode='r', encoding="utf-8")
+    for line in unknown_words.readlines():
+        unknown_words_set.add(line.strip())
 
 def parse_traindata():
     fin = config.hmmmodel
@@ -57,6 +62,7 @@ def parse_traindata():
         fo.close()
         sys.exit()
 
+absent_word_set = set()
 
 def viterbi_algorithm(sentence, tag_list, transition_prob, emission_prob,tag_count, word_set):
     global tag_set
@@ -80,6 +86,7 @@ def viterbi_algorithm(sentence, tag_list, transition_prob, emission_prob,tag_cou
                 current_prob[tag] = tp * em
          # Check for word in training data. If absent then probability is just tp# 
         else:
+            absent_word_set.add(word_list[0])
             em = Decimal(1) /(tag_count[tag] +len(word_set))
             current_prob[tag] = tp
 
@@ -144,14 +151,13 @@ for sentence in input_file.readlines():
         else:
             fout.write(word[j] + "/" + tag[j] + " ")
 
+if (config.synthetic):
+    print ("Absent words ", len(absent_word_set))
+    print ("Unknown words ", len(unknown_words_set))
+    print ("Intersection count between the above two ", len(unknown_words_set - absent_word_set))
 
 predicted = codecs.open(config.hmmoutput, mode ='r', encoding="utf-8")
 expected = codecs.open(config.test_tagged, mode ='r', encoding="utf-8")
-unknown_words_set = set()
-if config.synthetic:
-    unknown_words = codecs.open(config.unknown_words_out, mode='r', encoding="utf-8")
-    for line in unknown_words.readlines():
-        unknown_words_set.add(line.strip())
 
 c = 0
 total = 0

@@ -1,4 +1,4 @@
-synthetic = False
+synthetic = True
 
 test = 'test_data/test_data.txt'
 test_tagged = 'test_data/test_tagged.txt'
