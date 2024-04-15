@@ -7,6 +7,11 @@ tag_list = set()
 tag_count = {}
 word_set = set()
 
+try:
+    alpha = sys.argv[1]
+    config.smoothing_alpha = 1
+except:
+    'No emission smoothing alpha provided as part of arguments, using config default'
 
 def parse_traindata():
     fin = config.train
@@ -108,6 +113,13 @@ def emission_count(train_data):
                 count_word[word.lower() + "/" + tag] +=1
             else:
                 count_word[word.lower() + "/" + tag] = 1
+    
+    if config.emission_smoothing:
+        for word in word_set:
+            for tag in tag_list:
+                if word.lower() + "/" + tag not in count_word:
+                    count_word[word.lower() + "/" + tag] = 0
+
     return count_word
 
 
@@ -116,8 +128,13 @@ def emission_probability(train_data):
     word_count = emission_count(train_data)
     emission_prob_dict = {}
     # calculate probability of a word to be a certain Tag out of all the possible tags that it can be #
-    for key in word_count:
-        emission_prob_dict[key] = Decimal(word_count[key])/tag_count[key.split("/")[-1]]
+    if config.emission_smoothing:
+        V = len(word_set)
+        for key in word_count:
+            emission_prob_dict[key] = Decimal(word_count[key] + config.smoothing_alpha)/Decimal(tag_count[key.split("/")[-1]] + (config.smoothing_alpha * (V + 1)))
+    else:
+        for key in word_count:
+            emission_prob_dict[key] = Decimal(word_count[key])/tag_count[key.split("/")[-1]]
     return emission_prob_dict
 
 

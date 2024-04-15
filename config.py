@@ -18,3 +18,6 @@ test_split_pct = 0.2
 train_split_pct = 0.8
 
 data_count = 16630
+
+emission_smoothing = True
+smoothing_alpha = 0.01  
