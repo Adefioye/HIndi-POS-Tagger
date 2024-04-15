@@ -4,6 +4,7 @@ If working with synthetic data, change the synthetic flag to `True` or else `Fal
 > 2. python3 train.py
 > 3. python3 test.py
 
+
 # `POS Tagging in Hindi Document`
 Identification of Parts Of Speech  From Hindi Document
 
