@@ -78,9 +78,10 @@ def write_sample_to_file(random_sample_vocab):
     output_file.close()
 
 split = test_train_split()  
-iteration = 1   
-while (config.test_split_pct * config.data_count > split[0]):
-    split = test_train_split()
-    print ("---- Iteration number ", iteration, " ----")
-    iteration += 1 
+if config.synthetic == True:
+    iteration = 1   
+    while (config.test_split_pct * config.data_count > split[0]):
+        split = test_train_split()
+        print ("---- Iteration number ", iteration, " ----")
+        iteration += 1 
 remove_test_tags()

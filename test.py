@@ -169,7 +169,6 @@ for line in predicted.readlines():
             unknown_words_instances += 1 
         if(a[i]!=u[i]):
             c+=1
-   
             if config.synthetic and word in unknown_words_set:
                 unknown_words_incorrectly_predicted += 1 
 
@@ -181,3 +180,5 @@ if config.synthetic:
     print("Total number of unknown words", len(unknown_words_set))
     print("Total number of unknown word instances", unknown_words_instances)
     print("Total instances where unknown words were incorrectly predicted", unknown_words_incorrectly_predicted)
+    print("Model accuracy when it comes to tackling unknown words is = ",100 - (unknown_words_incorrectly_predicted/unknown_words_instances * 100),"%")
+    print("Model accuracy when it comes to tackling known words is = ",100 - ((c-unknown_words_incorrectly_predicted)/(total-unknown_words_instances) * 100),"%")
