@@ -17,7 +17,7 @@ while smoothing_alpha <= 1:
     # Test the model and get accuracy
     test_command = 'python3 test.py'
     output = os.popen(test_command).read()
-    appended_output = "Smoothing alpha " + str(smoothing_alpha), " \n", output + " \n"
+    appended_output = "Smoothing alpha " + str(smoothing_alpha) + " \n", output + " \n"
     print (appended_output)
     with open(output_file, "a") as file:
         file.write(appended_output)
