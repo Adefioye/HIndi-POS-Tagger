@@ -133,4 +133,59 @@
 धोनी/NNP ने/PSP मैच/NN के/PSP ४०वें/JJ ओवर/NN में/PSP अफरीदी/NN को/PSP जमकर/RB मार/NN लगाई/VM और/CC दो/QC छक्के/NN तथा/CC एक/PRP चौके/NN की/PSP मदद/NN से/PSP १८/QC रन/NN बटोर/NN लिए/PSP ।/PSP
 दोनों/QC देशों/NN ने/PSP एक/VM -/SYM दूसरे/NN की/PSP सैन्य/JJ क्षमता/NN के/PSP आंकलन/NN के/PSP लिए/PSP अपने/PRP -/SYM अपने/PRP पर्यवेक्षक/NN भी/RP भेजने/VM का/PSP फैसला/NN किया/VM है/VAUX ।/VAUX
 होटलों/NN की/PSP दृष्टि/NN से/PSP यह/PRP अमेरिका/NNP का/PSP दूसरा/QO बड़ा/JJ शहर/NN है/VM ।/VM
-हाईकोर्ट/NNP ने/PSP अपने/PRP निर्णय/NN में/PSP दो/QC पर्यवेक्षकों/NN को/PSP हटाते/NN हुए/VM केवल/RP न्यायमूर्ति/NN एस./NNP पी./NNP सेन/NNP को/PSP बीसीसीआई/NNP चुनाव/NN 
+हाईकोर्ट/NNP ने/PSP अपने/PRP निर्णय/NN में/PSP दो/QC पर्यवेक्षकों/NN को/PSP हटाते/NN हुए/VM केवल/RP न्यायमूर्ति/NN एस./NNP पी./NNP सेन/NNP को/PSP बीसीसीआई/NNP चुनाव/NN करवाने/VM का/PSP दायित्व/NN सौंप/VM दिया/VAUX है/VAUX ,/SYM जबकि/CC याचिकाकर्ता/NN चाहते/VM हैं/VAUX कि/CC हाईकोर्ट/NNP की/PSP एक/NN सदस्यीय/JJ पीठ/NN द्वारा/PSP सुनाए/VM गए/VAUX निर्णय/NN को/PSP ही/RP क़ायम/JJ रखा/VM जाए/VAUX ।/VAUX
+यह/DEM आरडीएक्स/NN उसे/PRP दिल्ली/NNP में/PSP मौजूद/JJ एक/NN अन्य/JJ आतंकी/NN तक/PSP पहुंचाना/VM था/VAUX ।/VAUX
+मॉरिशस/QO दौरे/NN पर/PSP उनके/PRP साथ/NST गए/VM पत्रकारों/NN से/PSP बातचीत/NN में/PSP प्रधानमंत्री/NNP ने/PSP कहा/VM कि/CC जब/PRP दो/QC राजनीतिक/JJ नेता/NN मिलते/VM हैं/VAUX तो/CC वे/PRP सिर्फ/RP मौसम/NN पर/PSP ही/RP बातचीत/NN को/PSP सीमित/JJ नहीं/NEG रख/VM सकते/VAUX ।/VAUX
+इसी/DEM तरह/NN मिल्कीपुर/NN में/PSP सपा/NNP के/PSP रामचंद्र/NNP ने/PSP बसपा/NNP के/PSP आनंद/NNP सेन/NNP को/PSP ३५,०१८/JJ मतों/NN के/PSP अंतर/NN से/PSP हराया/VM ।/VM
+अलंकरण/QO समारोह/NN के/PSP पहले/NST चरण/NN में/PSP २०/NNP मार्च/NNP को/PSP राष्ट्रपति/NNP ने/PSP ५०/QC विभूतियों/NN को/PSP पद्म/NNP अवार्ड/NNP से/PSP अलंकृत/JJ किया/VM ./VM
+हुसैन/NNP ने/PSP कहा/VM कि/CC उनकी/PRP पार्टी/NN एमक्यूएम/VM व/CC राष्ट्रपति/NNP मुशर्रफ/NNP की/PSP नीतियों/NN में/PSP कोई/PRP समानता/NN नहीं/NEG है/VM ।/VM
+इंडिया/NNP शाइनिंग/NNP के/PSP नारे/NN से/PSP राजग/NNP को/PSP नुकसान/NN हुआ/VM ।/VM
+इसके/PRP बावजूद/PSP संसाधनों/NN की/PSP कमी/NN को/PSP पूरा/JJ करने/VM के/PSP लिए/PSP केंद्र/NNP सरकार/NNP से/NNP 18,230/PSP करोड़/QC रुपये/NN वित्तीय/JJ सहायता/NN की/PSP मांग/NN की/PSP है/VM ।/VAUX
+यह/DEM बात/NN मंगलवार/NNP को/PSP यहां/PRP प्रदेश/NNP के/PSP दो/QC मंत्रियों/NN किरणपाल/NNP कश्यप/NNP और/CC धर्मपाल/NNP कश्यप/NNP ने/PSP पत्रकारों/NN से/PSP कही/VM ।/VM
+ग्रामीण/JJ क्षेत्र/NN में/PSP हर/QF घर/NN को/PSP साल/NN में/PSP कम/QF से/NN कम/QF १००/QC दिन/NN का/PSP रोजगार/NN दिलाने/VM से/CC संबंधित/JJ राष्ट्रीय/NNP ग्रामीण/NNP रोजगार/NNP गारंटी/NNP बिल/NNP बृहस्पतिवार/NNP को/PSP लोकसभा/NN में/PSP पेश/JJ किया/VM गया/VAUX ।/VAUX
+इन/DEM संस्थानों/NN के/PSP वैज्ञानिक/NN जात्रोपा/NNP प्रजाति/NN के/PSP पेड़ों/NN से/PSP ईंधन/NN तैयार/JJ करने/VM में/PSP जुटे/VM हैं/VAUX ।/VAUX
+यहाँ/PRP फॉरेस्ट/NN के/PSP होटल/NN में/PSP दो/QC से/QC तीन/QC हजार/QC रुपए/NN में/PSP बढ़िया/JJ एयरकूल्ड/VM और/CC एसी/NNP रूम/NN उपलब्ध/JJ हैं/VM ./VM
+इस/DEM वारदात/NN की/PSP सूचना/NN मिलते/VM ही/RP फरीदाबाद/NNP पुलिस/NN ने/PSP फौरन/RB दिल्ली/NNP व/CC उत्तर/NNP प्रदेश/NNP पुलिस/NN को/PSP घटना/NN से/PSP अवगत/JJ कराया/VM ।/VM
+इसी/DEM तरह/NN तकिये/VM ,/SYM ग्लोव्स/NNP ,/SYM रूमाल/NNP या/CC नेपकीन/NN में/PSP एम्ब्रायडरी/VM या/CC किसी/PRP भी/RP तरह/NN से/PSP तिरंगा/NNP अंकित/JJ करना/VM वर्जित/JJ होगा/VM ।/VM
+वापसी/NN में/PSP यह/DEM ट्रेन/NN मुंबई/NNP से/NNP 1/NNP जनवरी/NNP 2006/NNP को/PSP अपराह्न/NN 3.30/PSP बजे/NN चल/VM कर/VAUX अगले/JJ दिन/NN सुबह/NN 10.20/PSP बजे/NN नई/NNP दिल्ली/NNP पहुँचेगी/VM ।/VM
+पर/CC इनमें/PRP से/PRP कोई/PRP ऐसा/DEM चेहरा/NN नहीं/NEG है/VM ,/SYM जिसे/PRP संपूर्ण/JJ भारत/NNP के/PSP रूप/NN में/PSP दुनिया/NN के/PSP सामने/NST पेश/JJ किया/VM जा/VAUX सके/VAUX ।/VAUX
+वह/PRP अपने/PRP निर्माण/NN का/PSP नाम/NN मुमताज/NNP हवा/NNP महल/NNP से/PSP बदल/NN कर/VM रत्नालय/PSP करने/VM पर/PSP सहमत/JJ हो/VM गए/VAUX हैं/VAUX ,/SYM जिससे/PRP कि/CC उनके/PRP खिलाफ/PSP आगे/NST कोई/PRP कार्रवाई/NN न/NEG हो/VM ।/VM
+बुश/NNP के/PSP राष्ट्रपति/NNP भवन/NNP में/PSP आगमन/NN के/PSP मद्देनजर/PSP मुगल/NN गार्डन/NN कल/NN से/PSP तीन/QC दिन/NN के/PSP लिए/PSP बंद/JJ कर/VM दिया/VAUX गया/VAUX है/VAUX ।/VAUX
+वित्त/NNP विधेयक/NNP पर/PSP बहस/NN और/CC मतदान/NN में/PSP हिस्सा/NN लेने/VM के/PSP लिए/PSP भाजपा/NNP के/PSP नेतृत्व/NN में/PSP राजग/NNP ने/PSP सोमवार/NNP को/PSP एक/JJ दिन/NN के/PSP लिए/PSP अपना/PRP बहिष्कार/NN वापस/JJ ले/VM लिया/VAUX ।/VAUX
+वाजपेयी/NNP के/PSP बयान/NN के/PSP बाद/NST पार्टी/NN मुख्यालय/NN से/PSP भाजपा/NNP के/PSP सभी/QF नेता/NN भूमिगत/JJ हो/VM गए/VAUX ।/VAUX
+ताजा/RDP घटना/NN में/PSP जिले/NN में/PSP जनजातीय/JJ संघर्ष/NN में/PSP ६/QC लोगों/NN की/PSP मौत/NN हुई/VM है/VAUX और/CC १५०/QC से/NN अधिक/QF घरों/NN को/PSP आग/NN के/PSP हवाले/NN कर/VM दिया/VAUX गया/VAUX है/VAUX ।/VAUX
+भारत/NNP का/PSP नाम/NN लिए/PSP बगैर/RP मुशर्रफ/NNP ने/PSP कहा/VM कि/CC यह/DEM मिसाइल/NN भविष्य/NN की/PSP चुनौतियों/VM व/CC पड़ोसियों/NN के/PSP रणनीतिक/JJ विकास/NN से/PSP निपटने/VM में/PSP पूरी/JJ तरह/NN से/PSP सक्षम/JJ है/VM ।/VM
+संकट/NN को/PSP देखते/VM हुए/VAUX शाम/NN सवा/QCC सात/QC बजे/NN से/PSP रात/NN के/PSP सवा/QCC ग्यारह/QC बजे/NN तक/PSP मतपेटियों/NN की/PSP सुरक्षा/NN की/PSP खातिर/PSP कटौती/NN का/PSP आदेश/NN वापस/JJ ले/VM लिया/VAUX गया/VAUX ।/VAUX
+ये/DEM वही/PRP इलाक़े/VM हैं/VAUX जिनमें/PRP कांग्रेस/NNP को/PSP जबर्दस्त/JJ समर्थन/NN मिला/VM है/VAUX और/CC पिछले/JJ पाँच/QC सालों/NN में/PSP 4000/NN से/PSP ज्यादा/QF लोगों/NN ने/PSP आत्महत्याएँ/NN की/VM हैं/VAUX ।/VAUX
+फरीदाबाद/QO जिले/NN के/PSP होडल/NNP कस्बे/NN में/PSP डीएवी/NNP स्कूल/NNP के/PSP एक/JJ छात्र/NN आनंद/NNP कुमार/NNP उर्फ/RP गोलू/NNP के/PSP अपहरण/NN का/PSP मामला/NN प्रकाश/NNP में/PSP आया/VM है/VAUX ।/VAUX
+उल्लेखनीय/JJ है/VM कि/CC इस/DEM दौरान/NST डॉ./NN जोशी/NNP दिल्ली/NNP से/PSP बाहर/NST थे/VM ।/VM
+उन्होंने/PRP टाटा/NNP 407/NNP को/PSP गोदाम/NN के/PSP गेट/NN पर/PSP लगाकर/VM उसमें/PRP सिगरेटों/NN से/PSP भरे/JJ कार्टन/NN भर/VM लिए/PSP ।/PSP
+मुलाकात/NN के/PSP दौरान/NST उन्होंने/PRP नटवर/NNP सिंह/NNP को/PSP एक/JJ ज्ञापन/NN सौंपा/VM ।/VM
+यह/DEM और/QF भी/RP मजबूत/JJ हो/VM सकती/VAUX है/VAUX अगर/CC हम/PRP लोग/NN नियंत्रण/PSP रेखा/NN पर/PSP तनाव/NN को/PSP काबू/NN करने/VM में/PSP सफल/JJ रहे/VM ।/VM
+उन्होंने/PRP बताया/VM कि/CC एक/PRP बार/NN डल/NNP का/PSP पानी/NN इतना/QF अधिक/QF जम/VM गया/VAUX था/VAUX कि/CC इस/PRP पर/PSP जीप/NN भी/RP चली/VM थी/VAUX ।/VAUX
+याचियों/NN ने/PSP अपनी/PRP दलील/NN में/PSP कहा/VM कि/CC यदि/CC कोई/PRP वकील/NN अदालत/NN में/PSP प्रैक्टिस/NN कर/VM रहा/VAUX है/VAUX और/CC वह/PRP पादरी/NN या/CC नन/NN बन/VM जाता/VAUX है/VAUX तो/CC उसे/PRP वकील/NN के/PSP रूप/NN में/PSP वकालत/NN जारी/JJ रखने/VM से/CC अयोग्य/JJ नहीं/NEG ठहराया/VM जाता/VAUX ।/VAUX
+मजदूर/QO नेता/NN सुरेश/NNP गौड़/NNP के/PSP नेतृत्व/NN में/PSP शुक्रवार/NNP को/PSP होंडा/NNP के/PSP श्रमिकों/NN ने/PSP सोनिया/NNP गांधी/NNP से/PSP मुलाकात/NN की/PSP ।/PSP
+यह/PRP गुवाहटी/NNP से/NNP पश्चिम/NNP में/PSP 25/QC किलोमीटर/NN की/PSP दूरी/NN पर/PSP है/VM ।/VM
+सरकार/NN ने/PSP अगले/JJ साल/NN से/PSP वेतन/NN भोगियों/NN को/PSP आयकर/NNP रिटर्न/NNP दाखिल/JJ करने/VM से/SYM मुक्ति/NNP दिलाने/VM के/PSP संकेत/NN भी/RP दिए/VM हैं/VAUX ।/VAUX
+केंद्रीय/JJ खुफिया/JJ एजेंसियां/NN और/CC मुंबई/NNP पुलिस/NNP दुबई/NNP से/PSP प्रत्यर्पित/JJ एक/NN भारतीय/JJ नागरिक/NN से/PSP पूछताछ/NN करने/VM में/PSP जुटी/VM हैं/VAUX ।/VAUX
+दूसरी/QO तरफ/NST सुबह/NN सूत्रों/NN ने/PSP उम्मीद/NN व्यक्त/JJ की/VM थी/VAUX कि/CC सेना/NN के/PSP कार्यकारी/JJ अध्यक्ष/NN उद्धव/PSP ठाकरे/NNP चचेरे/JJ भाई/NN से/PSP मिलने/VM के/PSP लिए/PSP शनिवार/NNP को/PSP नासिक/VM जा/VAUX सकते/VAUX हैं/VAUX लेकिन/CC इससे/PRP पहले/NST ही/RP राज/NNP शिर्डी/NNP के/PSP लिए/PSP रवाना/JJ हो/VM गए/VAUX ।/VAUX
+विदेशों/NN में/PSP भी/RP करोड़ों/QC लोगों/NN ने/PSP शुक्र/NNP को/PSP सूर्य/NN के/PSP पटल/NN पर/PSP नजर/NN आने/VM और/CC फिर/RP धीरे/RB -/SYM धीरे/RDP उसकी/PRP सतह/NN से/PSP होते/VM हुए/VAUX जाते/VAUX देखा/VM ।/VM
+सेना/NN के/PSP उच्च/JJ पदस्थ/JJ सूत्रों/NN ने/PSP रविवार/NNP को/PSP इसकी/PRP जानकारी/NN देते/VM हुए/VAUX बताया/VM कि/CC वहाँ/PRP से/NN एक/PSP ब्रिगेड/NN और/CC टुकड़ी/PRP वापस/JJ बुलाने/VM के/PSP साथ/NST -/SYM साथ/NST कुछ/QF ठिकानों/NN के/PSP भी/RP स्थान/NN परिवर्तित/PSP किए/VM गए/VAUX हैं/VAUX ।/VAUX
+डीजल/NN को/PSP पानीपत/NNP रिफाइनरी/NN से/PSP पाइप/NN द्वारा/PSP जालंधर/NNP पहुंचाया/VM जा/VAUX सकता/VAUX है/VAUX और/CC वहां/PRP से/JJ सड़क/NN और/CC रेल/NN द्वारा/PSP लाहौर/NNP भेजा/VM जा/VAUX सकता/VAUX है/VAUX ।/VAUX
+इसके/PRP विरोध/NN में/PSP राजग/NNP ने/PSP लोकसभा/NN से/PSP वाकआउट/NN भी/RP किया/VM ।/VM
+काउंसिल/NNP के/PSP महासचिव/NN डॉक्टर/NN मंजूर/JJ आलम/NN के/PSP मुताबिक/PSP ,/SYM वह/PRP जल्द/RB ही/RP सेकुलर/JJ पार्टियों/NN के/PSP नेताओं/NN से/PSP मिलकर/RB इस/DEM मुद्दे/NN पर/PSP अपनी/PRP नाराजगी/NN जताएंगे/VM ताकि/CC फिर/RB ऐसी/DEM गलती/NN न/NEG दोहराई/VM जाए/VAUX ।/VAUX
+आतंकी/JJ से/NN आत्मसमर्पण/NN करने/VM को/PSP कहा/VM गया/VAUX लेकिन/CC उसने/PRP सुरक्षाबलों/NN पर/PSP गोली/NN चलानी/VM शुरू/NN कर/VM दी/VAUX ।/VAUX
+बहरहाल/NSTC ,/SYM याचिका/NN कर्ताओं/NN की/PSP ओर/NST से/JJ अदालत/NN में/PSP मौजूद/JJ हुए/VM वकील/NN डी./NNP वी./NNP सीताराम/NNP मूर्ति/NNP ने/PSP कहा/VM कि/CC '/SYM अल्पसंख्यक/NNP कल्याण/NNP रिपोर्ट/NNP '/SYM को/PSP पीठ/NN के/PSP समक्ष/NST पेश/JJ किया/VM गया/VAUX था/VAUX ।/VAUX
+भारत/INJ अपनी/PRP सीमा/NN में/PSP बंगलादेशी/JJ घुसपैठ/NN रोकने/VM के/PSP लिए/PSP जल्द/RB ही/RP अमेरिका/NNP से/PSP खोजी/JJ सेंसर/NN और/CC फ्लडलाइट/NN मंगा/VM सकता/VAUX है/VAUX ।/VAUX
+हमें/PRP लगता/VM है/VAUX कि/CC तटीय/JJ इलाकों/NN की/PSP मिट्टी/NN को/PSP समुद्र/NN के/PSP खारे/JJ पानी/NN से/PSP भारी/JJ नुकसान/NN हुआ/VM है/VAUX और/CC इस/DEM वजह/NN से/PSP यहां/PRP दोबारा/RB वनस्पति/NN पैदा/JJ होना/VM मुश्किल/JJ है/VM ।/VM
+रिश्तों/NN में/PSP सुधार/NN की/PSP कोशिशों/NN को/PSP एक/NN नया/JJ आयाम/NN उस/DEM वक्त/NN मिला/VM ,/SYM जब/PRP पाकिस्तान/NNP ने/PSP बुधवार/NNP को/PSP एक/NN महत्वपूर्ण/JJ घोषणा/NN में/PSP कहा/VM कि/CC वह/PRP जल्द/RB ही/RP ४४९/JJ बंदियों/NN को/PSP भारत/NNP को/PSP सौंपेगा/JJ ।/NN
+ये/DEM आदिवासी/NN महाराष्ट्र/NNP से/NNP सटे/NNP छत्तीसगढ़/NNP के/PSP जंगलों/NN में/PSP रहते/VM हैं/VAUX ।/VAUX
+इलाहाबाद/NNP विश्वविद्यालय/NNP का/PSP केंद्रीय/JJ दर्जा/NN फिर/RB से/RP बहाल/JJ करके/VM उसका/PRP गौरव/NN लौटने/VM की/PSP कोशिशों/NN में/PSP जुटे/VM मानव/NNP संसाधन/NNP विकास/NNP मंत्री/NNP अर्जुन/NNP सिंह/NNP अगले/JJ हफ्ते/NN इलाहाबाद/NNP का/PSP दौरा/NN करने/VM वाले/VAUX हैं/VAUX ।/VAUX
+मालूम/JJ हो/VM कि/CC मथेरानी/NNP ने/PSP पूर्व/NST विदेश/NNP मंत्री/NNP नटवर/NNP सिंह/NNP पर/PSP कांग्रेस/NNP पार्टी/NNP के/PSP प्रभाव/NN का/PSP गलत/JJ इस्तेमाल/NN कर/VM इराक/NNP में/PSP संयुक्त/NNP राष्ट्र/NNP संघ/NNP द्वारा/PSP चलाए/VM गए/VAUX तेल/NN के/PSP बदले/NNP अनाज/NNP कार्यक्रम/NNP से/PSP फायदा/NN उठाने/VM का/PSP आरोप/NN लगाया/VM था/VAUX ।/VAUX
+केंद्रीय/NNP ग्रामीण/NNP विकास/NNP मंत्री/NNP डॉ./NNP रघुवंश/NNP प्रसाद/NNP सिंह/NNP का/PSP कहना/VM है/VAUX कि/CC इस/DEM कानून/NN को/PSP लागू/JJ करने/VM के/PSP लिए/PSP उन्हें/PRP कम/QF से/NN कम/QF दो/QC माह/NN का/PSP समय/NN चाहिए/VM ।/VM
+यहाँ/PRP बाहर/NST से/NN आने/VM वाले/PSP पर्यटकों/NN के/PSP लिए/PSP कई/QF तीन/QC सितारा/QC होटल/NN हैं/VM ।/VM
+जानकार/QO सूत्रों/NN के/PSP मुताबिक/PSP सरकार/NN रिलायंस/NNP से/NNP जुड़े/PSP घटनाक्रमों/NN पर/PSP निगाह/NN रखे/VM हुए/VAUX है/VAUX ।/VAUX
+आडवाणी/NNP को/PSP मनाने/VM उनके/PRP आवास/NN पर/PSP पहुंचे/VM भाजपा/NNP नेता/NN साहिब/NNP सिंह/NNP वर्मा/NNP ने/PSP कहा/VM ,/SYM विहिप/NNP नेता/NN प्रवीण/NNP तोगड़िया/NNP के/PSP बयान/NN से/PSP अध्यक्ष/NN जी/RP आहत/VM हैं/VAUX ।/VAUX
+बूटा/NNP को/PSP वापस/JJ बुलाए/VM जाने/VAUX की/PSP माँग/NN पर/PSP राजग/NNP २५/NNP जून/NNP को/PSP एक/JJ रैली/NN आयोजित/JJ करेगा/VM ।/VM
+खंडपीठ/NN ने/PSP अपने/PRP फैसले/NN में/PSP इन/DEM तीनों/NN को/PSP एक/JJ महीने/NN के/PSP अंदर/NST सामूहिक/JJ रूप/NN से/PSP ३७,०००/JJ रुपये/NN लौटाने/VM के/PSP आदेश/NN दिए/VM हैं/VAUX ।/VAUX
+सोमवार/NNP को/PSP जाँच/NN टीम/NN के/PSP मुखिया/NN कर्नल/NNP सिंह/NNP ने/PSP इन्कलाबी/NN महाज/PSP संगठन/NN की/PSP बम/NN 

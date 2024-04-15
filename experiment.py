@@ -20,7 +20,7 @@ while smoothing_alpha <= 1:
     appended_output = "Smoothing alpha " + str(smoothing_alpha), " \n", output + " \n"
     print (appended_output)
     with open(output_file, "a") as file:
-        output_file.write(appended_output)
+        file.write(appended_output)
  
     #Move to the next alpha value
     smoothing_alpha += alpha_step
