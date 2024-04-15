@@ -5,10 +5,6 @@ import config
 import sys
 import os
 
-if config.synthetic == False:
-    print ('This file should only be run when working with synthetic data')
-    sys.exit()
-
 def random_sample_vocab():
     fin = config.data
     vocab = set()
@@ -22,16 +18,18 @@ def random_sample_vocab():
             s = s[:i]
             if (s != '|'):
                 vocab.add(s)
-    unknown_words = random.sample(sorted(vocab), 50)
+    unknown_words = random.sample(sorted(vocab), 100)
     input_file.close()
     return set(unknown_words)
 
 def test_train_split():
     sample = random_sample_vocab()
+    write_sample_to_file(sample)
     fin = config.data
     input_file = codecs.open(fin, mode = 'r', encoding="utf-8")
     test = set()
     train = set()
+    test_count = 0
     lines = input_file.readlines()
     for line in lines:
         oline = line
@@ -40,13 +38,20 @@ def test_train_split():
         for s in data:
             i = s.index('/')
             s = s[:i]
-            if s in sample:
+            if config.synthetic and s in sample:
                 test.add(oline)
+                break
+            if not config.synthetic and test_count < int(config.test_split_pct * config.data_count):
+                test.add(oline)
+                test_count +=1 
                 break
         if oline not in test:
             train.add(oline)
     write_set_to_file(config.test_tagged, test)
     write_set_to_file(config.train, train)
+    print ('Total test points ', len(test))
+    print ('Total train points ', len(train))
+    return len(test), len(train)
 
 def write_set_to_file(file_path, input_set):
     directory = os.path.dirname(file_path)
@@ -66,6 +71,16 @@ def remove_test_tags():
     input_file.close()
     output_file.close()
 
+def write_sample_to_file(random_sample_vocab):
+    output_file = codecs.open(config.unknown_words_out, mode = 'w', encoding="utf-8")
+    for s in random_sample_vocab:
+        output_file.write(s + '\n')
+    output_file.close()
 
-test_train_split()
+split = test_train_split()  
+iteration = 1   
+while (config.test_split_pct * config.data_count > split[0]):
+    split = test_train_split()
+    print ("---- Iteration number ", iteration, " ----")
+    iteration += 1 
 remove_test_tags()

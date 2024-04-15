@@ -147,18 +147,37 @@ for sentence in input_file.readlines():
 
 predicted = codecs.open(config.hmmoutput, mode ='r', encoding="utf-8")
 expected = codecs.open(config.test_tagged, mode ='r', encoding="utf-8")
+unknown_words_set = set()
+if config.synthetic:
+    unknown_words = codecs.open(config.unknown_words_out, mode='r', encoding="utf-8")
+    for line in unknown_words.readlines():
+        unknown_words_set.add(line.strip())
 
 c = 0
 total = 0
+unknown_words_incorrectly_predicted = 0
+unknown_words_instances = 0
 
 for line in predicted.readlines():
     u = line.split(" ")
     total += len(u)
     a = expected.readline().split(" ")
     for i in range(len(u)):
+        word = u[i]
+        word =word[:u[i].find('/')]
+        if word in unknown_words_set:
+            unknown_words_instances += 1 
         if(a[i]!=u[i]):
             c+=1
+   
+            if config.synthetic and word in unknown_words_set:
+                unknown_words_incorrectly_predicted += 1 
 
 print("Wrong Predictions = ",c)
 print("Total Predictions = ",total)
 print("Accuracy is = ",100 - (c/total * 100),"%")
+
+if config.synthetic:
+    print("Total number of unknown words", len(unknown_words_set))
+    print("Total number of unknown word instances", unknown_words_instances)
+    print("Total instances where unknown words were incorrectly predicted", unknown_words_incorrectly_predicted)

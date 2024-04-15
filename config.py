@@ -12,3 +12,9 @@ if synthetic:
 data = 'data/data.txt'
 hmmmodel = 'model/hmmmodel.txt'
 hmmoutput = 'outputs/hmmoutput.txt'
+unknown_words_out = 'outputs/unknown_words.txt'
+
+test_split_pct = 0.2
+train_split_pct = 0.8
+
+data_count = 16630
