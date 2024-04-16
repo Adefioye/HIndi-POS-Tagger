@@ -28,7 +28,8 @@ def random_sample_vocab():
 
 def test_train_split():
     """
-    This helps to split data into `train` and `test` categories
+    This helps to split data into `train` and `test` categories.
+    For synthetic data
     """
     sample = random_sample_vocab()
     write_sample_to_file(sample)
@@ -72,7 +73,7 @@ def write_set_to_file(file_path, input_set):
             file.write(str(item))
 
 def remove_test_tags():
-    """Removing test tags to generate `test_tagged.txt`.
+    """Removing tags in test data to generate `test_tagged.txt`.
     This dataset is useful for computing evaluation metrics like
     accuracy, precision, recall and F1-score
     """
