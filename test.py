@@ -111,6 +111,7 @@ def viterbi_algorithm(sentence, tag_list, transition_prob, emission_prob,tag_cou
                         locals()['dict{}'.format(i)][previous_state + "~" + tag] = max_prob
                         previous_tag = previous_state
                 else:
+                    absent_word_set.add(word_list[i])
                     em = Decimal(1) /(tag_count[tag] +len(word_set))
                     max_prob, previous_state = max((Decimal(previous_prob[previous_tag]) * Decimal(transition_prob[previous_tag+"~tag~"+tag]) * em, previous_tag) for previous_tag in previous_prob)
                     current_prob[tag] = max_prob
@@ -154,7 +155,7 @@ for sentence in input_file.readlines():
 if (config.synthetic):
     print ("Absent words ", len(absent_word_set))
     print ("Unknown words ", len(unknown_words_set))
-    print ("Intersection count between the above two ", len(unknown_words_set - absent_word_set))
+    print ("Intersection count between the above two ", len(absent_word_set.intersection(unknown_words_set)))
 
 predicted = codecs.open(config.hmmoutput, mode ='r', encoding="utf-8")
 expected = codecs.open(config.test_tagged, mode ='r', encoding="utf-8")
@@ -183,7 +184,7 @@ print("Total Predictions = ",total)
 print("Accuracy is = ",100 - (c/total * 100),"%")
 
 if config.synthetic:
-    print("Total number of unknown words", len(unknown_words_set))
+    print("Total number of induced unknown words", len(unknown_words_set))
     print("Total number of unknown word instances", unknown_words_instances)
     print("Total instances where unknown words were incorrectly predicted", unknown_words_incorrectly_predicted)
     print("Model accuracy when it comes to tackling unknown words is = ",100 - (unknown_words_incorrectly_predicted/unknown_words_instances * 100),"%")

@@ -2,7 +2,7 @@ import os
 import train
 import config 
 
-print ('---- Train for smoothing alpha ---- ')
+print ('---- Train for smoothing alpha parameter---- ')
 
 smoothing_alpha = 0.009
 alpha_step = 0.001
