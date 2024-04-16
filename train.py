@@ -147,5 +147,3 @@ def main(smoothing_alpha=config.smoothing_alpha):
         fout.write('%s:%s\n' % (key, value))
 
 main()
-
-
