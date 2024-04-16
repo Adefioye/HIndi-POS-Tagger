@@ -4,12 +4,12 @@ import config
 
 print ('---- Train for smoothing alpha ---- ')
 
-smoothing_alpha = 0.01
-alpha_step = 0.01
+smoothing_alpha = 0.009
+alpha_step = 0.001
 output_file = config.experiment_out
 
 # Iterate over alpha values
-while smoothing_alpha <= 1:
+while smoothing_alpha < 0.01:
     print ('--- Testing for alpha = ', smoothing_alpha, ' -----')
     # Train the model with the current alpha value
     train.main(smoothing_alpha)
@@ -23,5 +23,5 @@ while smoothing_alpha <= 1:
         file.write(appended_output)
  
     #Move to the next alpha value
-    smoothing_alpha += alpha_step
+    smoothing_alpha -= alpha_step
 

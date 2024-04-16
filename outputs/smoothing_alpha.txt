@@ -1,3 +1,68 @@
+Smoothing alpha 0.004 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  21778
+Total Predictions =  161650
+Accuracy is =  86.52768326631612 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3840
+Model accuracy when it comes to tackling unknown words is =  55.498899061304904 %
+Model accuracy when it comes to tackling known words is =  88.27742597421269 %
+
+Smoothing alpha 0.006 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  21690
+Total Predictions =  161674
+Accuracy is =  86.58411371030593 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3827
+Model accuracy when it comes to tackling unknown words is =  55.64955383010778 %
+Model accuracy when it comes to tackling known words is =  88.32826946322977 %
+
+Smoothing alpha 0.008 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  21384
+Total Predictions =  161684
+Accuracy is =  86.77420152890824 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3779
+Model accuracy when it comes to tackling unknown words is =  56.205817591841466 %
+Model accuracy when it comes to tackling known words is =  88.49759890235536 %
+
+Smoothing alpha 0.009 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  21399
+Total Predictions =  161684
+Accuracy is =  86.76492417307836 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3781
+Model accuracy when it comes to tackling unknown words is =  56.182639935102564 %
+Model accuracy when it comes to tackling known words is =  88.48910522361243 %
+ 
+Smoothing alpha 0.007 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  21969
+Total Predictions =  161650
+Accuracy is =  86.4095267553356 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3844
+Model accuracy when it comes to tackling unknown words is =  55.45254374782709 %
+Model accuracy when it comes to tackling known words is =  88.15522052528738 %
+
 Smoothing alpha 0.01 
 Absent words  232
 Unknown words  100
@@ -11,3 +76,145 @@ Total instances where unknown words were incorrectly predicted 3782
 Model accuracy when it comes to tackling unknown words is =  56.17105110673311 %
 Model accuracy when it comes to tackling known words is =  88.48357736963496 %
  
+Smoothing alpha 0.02 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  22155
+Total Predictions =  161667
+Accuracy is =  86.2959045445267 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3849
+Model accuracy when it comes to tackling unknown words is =  55.394599605979835 %
+Model accuracy when it comes to tackling known words is =  88.03826500607693 %
+ 
+Smoothing alpha 0.03 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  22764
+Total Predictions =  161655
+Accuracy is =  85.91815904240512 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3880
+Model accuracy when it comes to tackling unknown words is =  55.03534592652683 %
+Model accuracy when it comes to tackling known words is =  87.65961339903023 %
+ 
+Smoothing alpha 0.04 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  23225
+Total Predictions =  161655
+Accuracy is =  85.6329838235749 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 3901
+Model accuracy when it comes to tackling unknown words is =  54.79198053076834 %
+Model accuracy when it comes to tackling known words is =  87.37208056147321 %
+ 
+Smoothing alpha 0.05 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  23731
+Total Predictions =  161638
+Accuracy is =  85.31842759747089 %
+Total number of unknown words 100
+Total number of unknown word instances 8628
+Total instances where unknown words were incorrectly predicted 3920
+Model accuracy when it comes to tackling unknown words is =  54.56652758460825 %
+Model accuracy when it comes to tackling known words is =  87.05248023005032 %
+
+Smoothing alpha 10 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  42538
+Total Predictions =  161563
+Accuracy is =  73.67095188873691 %
+Total number of unknown words 100
+Total number of unknown word instances 8623
+Total instances where unknown words were incorrectly predicted 4474
+Model accuracy when it comes to tackling unknown words is =  48.11550504464803 %
+Model accuracy when it comes to tackling known words is =  75.11180855237347 %
+
+Smoothing alpha 9 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  41884
+Total Predictions =  161491
+Accuracy is =  74.06418933562861 %
+Total number of unknown words 100
+Total number of unknown word instances 8618
+Total instances where unknown words were incorrectly predicted 4547
+Model accuracy when it comes to tackling unknown words is =  47.23833836156881 %
+Model accuracy when it comes to tackling known words is =  75.57645889071321 %
+ 
+Smoothing alpha 8 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  41140
+Total Predictions =  161459
+Accuracy is =  74.51984714385695 %
+Total number of unknown words 100
+Total number of unknown word instances 8618
+Total instances where unknown words were incorrectly predicted 4584
+Model accuracy when it comes to tackling unknown words is =  46.80900440937572 %
+Model accuracy when it comes to tackling known words is =  76.08233392872332 %
+ 
+Smoothing alpha 7 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  40334
+Total Predictions =  161661
+Accuracy is =  75.05025949363173 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 4635
+Model accuracy when it comes to tackling unknown words is =  46.28578050759068 %
+Model accuracy when it comes to tackling known words is =  76.67219927858226 %
+ 
+Smoothing alpha 6 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  39382
+Total Predictions =  161663
+Accuracy is =  75.63944749262355 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 4678
+Model accuracy when it comes to tackling unknown words is =  45.787460887704256 %
+Model accuracy when it comes to tackling known words is =  77.322686461832 %
+ 
+Smoothing alpha 5 
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  38256
+Total Predictions =  161671
+Accuracy is =  76.33712910787958 %
+Total number of unknown words 100
+Total number of unknown word instances 8629
+Total instances where unknown words were incorrectly predicted 4641
+Model accuracy when it comes to tackling unknown words is =  46.21624753737397 %
+Model accuracy when it comes to tackling known words is =  78.03544125142118 %
+
+Smoothing alpha null
+Absent words  232
+Unknown words  100
+Intersection count between the above two  81
+Wrong Predictions =  13913
+Total Predictions =  161535
+Accuracy is =  91.38700591203144 %
+Total number of unknown words 100
+Total number of unknown word instances 8620
+Total instances where unknown words were incorrectly predicted 3686
+Model accuracy when it comes to tackling unknown words is =  57.23897911832946 %
+Model accuracy when it comes to tackling known words is =  93.31197070267795 %

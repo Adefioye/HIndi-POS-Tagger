@@ -122,7 +122,7 @@ def emission_probability(train_data, smoothing_alpha):
     word_count = emission_count(train_data)
     emission_prob_dict = {}
     # calculate probability of a word to be a certain Tag out of all the possible tags that it can be #
-    print(smoothing_alpha, " is being used ")
+    print("Smoothing alpha = ", smoothing_alpha)
     if config.emission_smoothing:
         V = len(word_set)
         for key in word_count:
@@ -145,5 +145,7 @@ def main(smoothing_alpha=config.smoothing_alpha):
     fout.write(u'Emission Model\n') 
     for key, value in emission_model.items():
         fout.write('%s:%s\n' % (key, value))
+
+main()
 
 
