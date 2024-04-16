@@ -2,6 +2,8 @@ import sys
 from decimal import *
 import codecs
 import config
+import matplotlib.pyplot as plt
+import numpy as np
 
 tag_set = set()
 word_set = set()
@@ -164,6 +166,21 @@ c = 0
 total = 0
 unknown_words_incorrectly_predicted = 0
 unknown_words_instances = 0
+classified_as = dict()
+correctly_classified_as = dict()
+tag_count_test = dict()
+
+for line in expected.readlines():
+    u = line.split(" ")
+    for i in range(len(u)):
+        tag = u[i]
+        tag = tag[u[i].find('/') + 1:].strip(' /\n\t')
+        if len(tag) > 0 and tag in tag_count_test:
+            tag_count_test[tag] += 1 
+        elif len(tag) > 0:
+            tag_count_test[tag] = 1  
+
+expected.seek(0)
 
 for line in predicted.readlines():
     u = line.split(" ")
@@ -174,14 +191,32 @@ for line in predicted.readlines():
         word =word[:u[i].find('/')]
         if word in unknown_words_set:
             unknown_words_instances += 1 
+        tag = u[i]
+        tag = tag[max(u[i].find('/') + 1, u[i].find('//') + 1):].strip(' /\n\t')
+        if len(tag) > 0 and tag in classified_as:
+             classified_as[tag] += 1
+        elif len(tag) > 0:
+           classified_as[tag] = 1
         if(a[i]!=u[i]):
             c+=1
             if config.synthetic and word in unknown_words_set:
                 unknown_words_incorrectly_predicted += 1 
+        else: 
+            if len(tag) > 0 and tag in correctly_classified_as:
+                correctly_classified_as[tag] += 1
+            elif len(tag) > 0:
+                correctly_classified_as[tag] = 1
 
 print("Wrong Predictions = ",c)
 print("Total Predictions = ",total)
 print("Accuracy is = ",100 - (c/total * 100),"%")
+
+for tag in sorted(classified_as):
+    print ("Precision for tag ", tag, " = ", (correctly_classified_as[tag]/classified_as[tag]) * 100, '%')
+
+for tag in sorted(tag_count_test):
+    print ("Recall for tag ", tag, " = ", (correctly_classified_as[tag]/tag_count_test[tag]) * 100, '%')
+
 
 if config.synthetic:
     print("Total number of induced unknown words", len(unknown_words_set))
@@ -189,3 +224,34 @@ if config.synthetic:
     print("Total instances where unknown words were incorrectly predicted", unknown_words_incorrectly_predicted)
     print("Model accuracy when it comes to tackling unknown words is = ",100 - (unknown_words_incorrectly_predicted/unknown_words_instances * 100),"%")
     print("Model accuracy when it comes to tackling known words is = ",100 - ((c-unknown_words_incorrectly_predicted)/(total-unknown_words_instances) * 100),"%")
+
+plt.style.use('Solarize_Light2')
+
+# Calculating precision and recall
+precision_data = {tag: (correctly_classified_as[tag], classified_as[tag]) for tag in sorted(classified_as)}
+recall_data = {tag: (correctly_classified_as[tag], tag_count_test[tag]) for tag in sorted(tag_count_test)}
+
+# Extracting tag names, precision/recall values, and tag counts
+tags = sorted(classified_as.keys())
+precisions = [val[0] / val[1] for val in precision_data.values()]
+recalls = [val[0] / val[1] for val in recall_data.values()]
+tag_counts = [tag_count_test[tag] for tag in tags]
+
+# Plotting both precision and recall on the same bar chart
+bar_width = 0.35
+index = np.arange(len(tags))
+
+plt.figure(figsize=(20, 7))
+bar1 = plt.bar(index, precisions, bar_width, label='Precision', color='blue')
+bar2 = plt.bar(index + bar_width, recalls, bar_width, label='Recall', color='green')
+
+# Creating custom x-axis labels with tag names and counts
+x_labels = [f'{tag}\n({count})' for tag, count in zip(tags, tag_counts)]
+plt.xlabel('Tags', fontsize=14)  # Increase font size for better readability
+plt.ylabel('Percentage', fontsize=14)  # Increase font size for better readability
+plt.title('Precision and Recall vs Tags', fontsize=16)  # Increase font size for better readability
+plt.xticks(index + bar_width / 2, x_labels, rotation=90)  # Adjust x-axis labels and rotation
+plt.legend()  # Add legend to distinguish between precision and recall
+
+plt.tight_layout()
+plt.show()
