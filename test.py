@@ -226,7 +226,7 @@ if config.synthetic:
     print("Model accuracy when it comes to tackling unknown words is = ",100 - (unknown_words_incorrectly_predicted/unknown_words_instances * 100),"%")
     print("Model accuracy when it comes to tackling known words is = ",100 - ((c-unknown_words_incorrectly_predicted)/(total-unknown_words_instances) * 100),"%")
 
-plt.style.use('Solarize_Light2')
+plt.style.use('https://github.com/dhaitz/matplotlib-stylesheets/raw/master/pitayasmoothie-dark.mplstyle')
 
 # Calculating precision and recall
 precision_data = {tag: (correctly_classified_as[tag], classified_as[tag]) for tag in sorted(classified_as)}
@@ -242,8 +242,8 @@ bar_width = 0.35
 index = np.arange(len(tags))
 
 plt.figure(figsize=(20, 7))
-bar1 = plt.bar(index, precisions, bar_width, label='Precision', color='blue')
-bar2 = plt.bar(index + bar_width, recalls, bar_width, label='Recall', color='green')
+bar1 = plt.bar(index, precisions, bar_width, label='Precision')
+bar2 = plt.bar(index + bar_width, recalls, bar_width, label='Recall')
 
 # Creating custom x-axis labels with tag names and counts
 x_labels = []
