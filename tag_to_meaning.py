@@ -1,0 +1,21 @@
+tag_to_meaning = {
+    'NN': 'Noun',
+    'NNP': 'Proper Noun',
+    'JJ': 'Adjective',
+    'DEM': 'Determiner / Demonstrative',
+    'INJ': 'Interjection',
+    'INTF': 'Adverb (intensifier)',
+    'NEG': 'Negation',
+    'NST': 'Spatial Nouns',
+    'RP': 'Particles',
+    'PRP': 'Pronoun',
+    'RB': 'Adverb',
+    'RDP': 'Reduplications',
+    'AF': 'Quantifiers',
+    'VAUX': 'Aux verb',
+    'SYM': 'Symbol',
+    'PSP': 'Postposition',
+    'CC': 'Coordination Conjunction',
+    'QC': 'Cardinals',
+    'QO': 'Ordinals'
+}

@@ -4,6 +4,7 @@ import codecs
 import config
 import matplotlib.pyplot as plt
 import numpy as np
+import tag_to_meaning
 
 tag_set = set()
 word_set = set()
@@ -235,7 +236,6 @@ recall_data = {tag: (correctly_classified_as[tag], tag_count_test[tag]) for tag 
 tags = sorted(classified_as.keys())
 precisions = [val[0] / val[1] for val in precision_data.values()]
 recalls = [val[0] / val[1] for val in recall_data.values()]
-tag_counts = [tag_count_test[tag] for tag in tags]
 
 # Plotting both precision and recall on the same bar chart
 bar_width = 0.35
@@ -246,12 +246,17 @@ bar1 = plt.bar(index, precisions, bar_width, label='Precision', color='blue')
 bar2 = plt.bar(index + bar_width, recalls, bar_width, label='Recall', color='green')
 
 # Creating custom x-axis labels with tag names and counts
-x_labels = [f'{tag}\n({count})' for tag, count in zip(tags, tag_counts)]
-plt.xlabel('Tags', fontsize=14)  # Increase font size for better readability
-plt.ylabel('Percentage', fontsize=14)  # Increase font size for better readability
-plt.title('Precision and Recall vs Tags', fontsize=16)  # Increase font size for better readability
-plt.xticks(index + bar_width / 2, x_labels, rotation=90)  # Adjust x-axis labels and rotation
-plt.legend()  # Add legend to distinguish between precision and recall
+x_labels = []
+for tag in tags:
+    tag_meaning = tag
+    if tag in tag_to_meaning.tag_to_meaning:
+        tag_meaning = tag_to_meaning.tag_to_meaning[tag]
+    x_labels.append(tag_meaning + '\n' + str(tag_count_test[tag]))
+plt.xlabel('Tags', fontsize=14) 
+plt.ylabel('Percentage', fontsize=14)  
+plt.title('Precision and Recall vs Tags', fontsize=16) 
+plt.xticks(index + bar_width / 2, x_labels, rotation=90)  
+plt.legend() 
 
 plt.tight_layout()
 plt.show()
