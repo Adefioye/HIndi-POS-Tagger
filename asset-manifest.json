@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HIndi-POS-Tagger/static/css/main.87680161.css",
+    "main.js": "/HIndi-POS-Tagger/static/js/main.0ae26643.js",
+    "static/js/453.419a5d54.chunk.js": "/HIndi-POS-Tagger/static/js/453.419a5d54.chunk.js",
+    "index.html": "/HIndi-POS-Tagger/index.html",
+    "main.87680161.css.map": "/HIndi-POS-Tagger/static/css/main.87680161.css.map",
+    "main.0ae26643.js.map": "/HIndi-POS-Tagger/static/js/main.0ae26643.js.map",
+    "453.419a5d54.chunk.js.map": "/HIndi-POS-Tagger/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87680161.css",
+    "static/js/main.0ae26643.js"
+  ]
+}
