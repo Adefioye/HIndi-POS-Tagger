@@ -19,7 +19,27 @@ train_split_pct = 0.8
 
 data_count = 16630
 
-emission_smoothing = False
-smoothing_alpha = 0.008 
+emission_smoothing = True
+smoothing_alpha = 0.08
 
 experiment_out = 'outputs/smoothing_alpha.txt'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+        
+        

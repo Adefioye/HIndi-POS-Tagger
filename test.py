@@ -2,9 +2,9 @@ import sys
 from decimal import *
 import codecs
 import config
-import matplotlib.pyplot as plt
 import numpy as np
 import tag_to_meaning
+import matplotlib.pyplot as plt
 
 tag_set = set()
 word_set = set()
@@ -183,6 +183,8 @@ for line in expected.readlines():
 
 expected.seek(0)
 
+incorrectly_predicted = set()
+
 for line in predicted.readlines():
     u = line.split(" ")
     total += len(u)
@@ -202,6 +204,7 @@ for line in predicted.readlines():
             c+=1
             if config.synthetic and word in unknown_words_set:
                 unknown_words_incorrectly_predicted += 1 
+            incorrectly_predicted.add(line)
         else: 
             if len(tag) > 0 and tag in correctly_classified_as:
                 correctly_classified_as[tag] += 1
@@ -213,10 +216,16 @@ print("Total Predictions = ",total)
 print("Accuracy is = ",100 - (c/total * 100),"%")
 
 for tag in sorted(classified_as):
-    print ("Precision for tag ", tag, " = ", (correctly_classified_as[tag]/classified_as[tag]) * 100, '%')
+    if tag in correctly_classified_as:
+        print ("Precision for tag ", tag, " = ", (correctly_classified_as[tag]/classified_as[tag]) * 100, '%')
+    else:
+        print ("Precision for tag ", tag, " = ", '0%')
 
 for tag in sorted(tag_count_test):
-    print ("Recall for tag ", tag, " = ", (correctly_classified_as[tag]/tag_count_test[tag]) * 100, '%')
+    if tag in correctly_classified_as:
+        print ("Recall for tag ", tag, " = ", (correctly_classified_as[tag]/tag_count_test[tag]) * 100, '%')
+    else:
+        print ("Recall for tag ", tag, " = ", '0%')
 
 
 if config.synthetic:
@@ -228,14 +237,24 @@ if config.synthetic:
 
 plt.style.use('https://github.com/dhaitz/matplotlib-stylesheets/raw/master/pitayasmoothie-dark.mplstyle')
 
-# Calculating precision and recall
-precision_data = {tag: (correctly_classified_as[tag], classified_as[tag]) for tag in sorted(classified_as)}
-recall_data = {tag: (correctly_classified_as[tag], tag_count_test[tag]) for tag in sorted(tag_count_test)}
+precision_data = {}
+recall_data = {}
+tags = tag_to_meaning.tag_to_meaning.keys()
 
-# Extracting tag names, precision/recall values, and tag counts
-tags = sorted(classified_as.keys())
-precisions = [val[0] / val[1] for val in precision_data.values()]
-recalls = [val[0] / val[1] for val in recall_data.values()]
+for tag in tags:
+    if tag in correctly_classified_as:
+        precision_data[tag] = correctly_classified_as[tag] / classified_as[tag]
+    else:
+        precision_data[tag] = 0  # Default precision is 0 if no correct classifications
+
+    if tag in correctly_classified_as:
+        recall_data[tag] = correctly_classified_as[tag] / tag_count_test[tag]
+    else:
+        recall_data[tag] = 0  # Default recall is 0 if no correct classifications
+
+# Extracting precision/recall values
+precisions = [precision_data[tag] for tag in tags]
+recalls = [recall_data[tag] for tag in tags]
 
 # Plotting both precision and recall on the same bar chart
 bar_width = 0.35
@@ -248,10 +267,9 @@ bar2 = plt.bar(index + bar_width, recalls, bar_width, label='Recall')
 # Creating custom x-axis labels with tag names and counts
 x_labels = []
 for tag in tags:
-    tag_meaning = tag
-    if tag in tag_to_meaning.tag_to_meaning:
-        tag_meaning = tag_to_meaning.tag_to_meaning[tag]
-    x_labels.append(tag_meaning + '\n' + str(tag_count_test[tag]))
+    tag_meaning = tag_to_meaning.tag_to_meaning[tag]
+    strx = tag_meaning + '\n' + ('0' if tag not in tag_count_test else str(tag_count_test[tag]))
+    x_labels.append(strx)
 plt.xlabel('Tags', fontsize=14) 
 plt.ylabel('Percentage', fontsize=14)  
 plt.title('Precision and Recall vs Tags', fontsize=16) 
@@ -260,3 +278,8 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+
+with open("outputs/incorrectly_predicted.txt", "w") as file:
+    # Write each sentence to the file
+    for sentence in incorrectly_predicted:
+        file.write(sentence)

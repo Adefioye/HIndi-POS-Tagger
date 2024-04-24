@@ -6,6 +6,9 @@ import config
 tag_list = set()
 tag_count = {}
 word_set = set()
+token_count = 0
+
+print(config.train)
 
 def parse_traindata():
     fin = config.train
@@ -34,7 +37,8 @@ def parse_traindata():
 
 def transition_count(train_data):
     global tag_list
-    global word_set    
+    global word_set   
+    global token_count 
     transition_dict = {}
     global tag_count
     for value in train_data:
@@ -44,6 +48,7 @@ def transition_count(train_data):
             i = data[::-1]
             word = data[:-i.find("/") - 1]
             word_set.add(word.lower())
+            token_count += 1 
             data = data.split("/")
             tag = data[-1]
             tag_list.add(tag)
@@ -91,7 +96,7 @@ def transition_smoothing(train_data):
         for tag2 in tag_list:
         	# if a particular tag combination does not exist in the dictionary, we set its probability to minimum#
             if (tag1 +"~tag~" + tag2) not in transition_prob:
-                transition_prob[(tag1+"~tag~"+tag2)] = Decimal(1)/Decimal(len(word_set) + tag_count[tag1])
+                transition_prob[(tag1+"~tag~"+tag2)] = tag_count[tag] / token_count
     return transition_prob
 
 
@@ -136,7 +141,7 @@ def emission_probability(train_data, smoothing_alpha):
 def main(smoothing_alpha=config.smoothing_alpha):
     train_data = parse_traindata()
     transition_model = transition_smoothing(train_data)
-    emission_model = emission_probability(train_data, smoothing_alpha)
+    emission_model = emission_probability(train_data, 0.08)
 
     fout = codecs.open(config.hmmmodel, mode ='w', encoding="utf-8")
     for key, value in transition_model.items():

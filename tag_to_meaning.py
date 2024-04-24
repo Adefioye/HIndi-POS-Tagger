@@ -12,7 +12,7 @@ tag_to_meaning = {
     'RB': 'Adverb',
     'RDP': 'Reduplications',
     'AF': 'Quantifiers',
-    'VAUX': 'Aux verb',
+    'VAUX': 'Auxiliary verb',
     'SYM': 'Symbol',
     'PSP': 'Postposition',
     'CC': 'Coordination Conjunction',
